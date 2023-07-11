@@ -7,7 +7,13 @@
 $primary: #0a0017;
 $secondary: #FF66C4;
 
-$font-size-base: 1.2rem;
+$modal-content-color: white;
+$modal-content-bg: #0a0017;
+$modal-content-border-color: #c063c1;
+$modal-header-border-color: #c063c1;
+
+$btn-close-color: white;
+$btn-close-opacity: 0.9;
 
 $offcanvas-bg-color: #0a0017;
 $offcanvas-color: #fff;
@@ -86,8 +92,8 @@ nav .brandName {
     border-radius: 40px;
     height: 60px;
     width: 60px;
-    background: var(--darkPurple) url(assets/up-arrow.png) no-repeat center;
-    border-color: rgb(113, 113, 113);
+    background: var(--darkPurple) url(../assets/up-arrow.png) no-repeat center;
+    border-color: var(--pink);
 }
 
 nav img {

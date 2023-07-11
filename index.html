@@ -33,7 +33,7 @@
             </a>
             <!-- toggle button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" data-bs-theme="dark">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar Links -->
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="#founders">Founders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#chapter">Start A Chapter</a>
+                        <a class="nav-link" href="#learnMore">Learn More</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -396,7 +396,7 @@
     </section>
 
     <!-- Start a chapter -->
-    <section id="chapter">
+    <section id="learnMore">
         <div class="container-sm">
             <div class="row">
                 <div class="col d-none d-lg-block">
@@ -409,20 +409,31 @@
                         digital marketing agency, our mission is to provide top-notch services to our clients while
                         gaining valuable experience and knowledge to fuel our future success at affordable no costs at
                         all.</p>
-                    <a href="#intro" class="btn btn-secondary fw-bold" style="color:white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">Contact Us</a>
+                    <button class="btn btn-secondary fw-bold" style="color:white;" type="button" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Contact Us</h5>
-            <button type="button" class="btn-lg btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            ...
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Email: <a href="mailto:dma.zenith@gmail.com" style="color: white;">dma.zenith@gmail.com</a>
+                    <hr>
+                    Phone: Insert Phone Number
+                    <hr>
+                    LinkedIn: Insert LinkedIn
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary fw-bold1" data-bs-dismiss="modal" style="color: white;">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
