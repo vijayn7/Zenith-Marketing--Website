@@ -77,7 +77,7 @@ $card-border-color: #c063c1;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 0vh;
     display: flex;
     flex-wrap: wrap;
     opacity: 0.99;
@@ -132,6 +132,48 @@ nav .brandName {
 nav img {
     width: 55px;
     margin-right: 1rem;
+}
+
+section#services .title {
+    font-size: 5.5rem;
+}
+
+@media (max-width:1600px) {
+    section svg {
+        width: 40%;
+        height: 0.4rem;
+    }
+}
+
+@media (max-width:1464px) {
+    section#services .title {
+        font-size: 5.5rem;
+    }
+}
+@media (max-width:1200px) {
+    section svg {
+        width: 50%;
+        height: 0.4rem;
+    }
+}
+@media (max-width:991px) {
+
+}
+@media (max-width:768px) {
+    section svg {
+        width: 60%;
+        height: 0.4rem;
+    }
+}
+@media (max-width:450px) {
+    section#services .title {
+        font-size: 3.5rem;
+    }
+
+    section svg {
+        width: 80%;
+        height: 0.4rem;
+    }
 }
 
 //Import bootstrap (Should be at the end of the file)
