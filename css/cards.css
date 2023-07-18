@@ -6,7 +6,8 @@
 
 .founderCard {
       max-width: 340px;
-      min-width: 280px;
+      min-width: 340px;
+      min-height: 540px;
       margin: auto;
       overflow-y: auto;
       position: relative;
